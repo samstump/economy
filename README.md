@@ -64,7 +64,8 @@ Agents can earn production bonuses by:
 - developing new technologies
 
 ## Commerce
-### Double Auction Clearing House
 
+### Double Auction Clearing House
+### Transportation
 
 
