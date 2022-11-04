@@ -31,11 +31,17 @@ The table below describes the agent types in terms of the resource outputs.
 | sawmill    | timber            |
 | quarry     | stone             |
 | mine       | iron              |
+| agent_k    | resource_k        |
 
 ### Workforce
 Agents have a workforce property, numeric - a proxy for population.
-The agents' production is dependent on workforce. 
-At `workforce = 0`, there is no production.
+> workforce.size
+
+The agents' production is proportional to workforce. 
+> workforce.production_factor
+
+The agents' food requirements are proportional to workforce.
+> workforce.food_factor
 
 #### Population Growth
 Given the right conditions, workforce will increase over time.
