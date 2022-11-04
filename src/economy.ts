@@ -6,11 +6,10 @@ class Workforce extends Object {
 
     constructor(props) {
         super(props);
-        this.size = props.size;
+        this.size = props.size ?? 1;
         this.food_factor = props.food_factor ?? 1;
         this.production_factor = props.production_factor ?? 1;
     }
-
 }
 
 class Agent extends Object {
