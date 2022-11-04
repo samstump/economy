@@ -49,14 +49,18 @@ Each agent type has a labor factor, which the ratio of workforce
 to production. Other resources in various quantities may be required for
 production, refer to the table below.
 
-| Agent Type | L   | Resources Required | Resource Produced |
-|------------|-----|--------------------|-------------------|
-| farm       | f   | timber, iron       | food              |
-| sawmill    | s   | timber, iron       | timber            |
-| quarry     | q   | timber, iron       | stone             |
-| mine       | m   | timber, iron       | iron              |
-
 >TODO: is there a good way to express these input/output relations?
+
+```R_1 f + R_2 t + R_3 q + R_4 m + ... + R_k v_k = Output?```
+
+| Agent Type | food | timber | stone | iron | output    |
+|------------|------|--------|-------|------|-----------|
+| farm       | 1    | 3      | 1     | 1    | 10 food   |
+| sawmill    | 1    | 2      | 1     | 2    | 10 timber |
+| quarry     | 1    | 2      | 1     | 2    | 10 stone  |
+| mine       | 1    | 3      | 2     | 1    | 10 iron   |
+| agent_k    | f_k  | t_k    | s_k   | i_k  | X output  |
+
 #### Productivity
 Agents can earn production bonuses by:
 - investing in production facilities
@@ -67,5 +71,3 @@ Agents can earn production bonuses by:
 
 ### Double Auction Clearing House
 ### Transportation
-
-
